@@ -3,24 +3,26 @@
 @tailwind utilities;
 
 :root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
-	font-weight: 400;
+	--teal-100: 178.6, 84.31%, 10%;
+	--teal-600: 173.41, 80.39%, 40%;
+	--teal-700: 172.46, 66.01%, 50.39%;
+	--teal-900: 168.39, 83.78%, 78.24%;
+	font-family: 'Montserrat', sans-serif;
 
-	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
-	background-color: #242424;
-
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	background-color: #141727;
 }
 
 body {
 	margin: 0;
-	display: flex;
-	place-items: center;
-	min-width: 320px;
+	padding: 0;
+
 	min-height: 100vh;
+}
+
+@layer utilities {
+	::selection {
+		background-color: hsl(var(--teal-100)) !important;
+		color: hsl(var(--teal-700)) !important;
+	}
 }
