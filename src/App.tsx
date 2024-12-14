@@ -1,11 +1,16 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import ErrorPage from './pages/ErrorPage'
+
 function App() {
 	return (
-		<div className=''>
-			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores maiores
-			provident ea incidunt earum minus cumque deleniti a, consequuntur aperiam
-			voluptatum repellat placeat consectetur laudantium quidem? Amet nesciunt
-			dolore earum!
-		</div>
+		<>
+			<BrowserRouter>
+				<Routes>
+					<Route path='/' element={<h1>Home</h1>} />
+					<Route path='*' element={<ErrorPage />} />
+				</Routes>
+			</BrowserRouter>
+		</>
 	)
 }
 
