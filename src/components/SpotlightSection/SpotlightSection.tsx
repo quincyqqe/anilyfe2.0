@@ -36,7 +36,7 @@ export default function SpotlightSection() {
 			ref={emblaRef}
 		>
 			<div className='embla__container flex'>
-				{data.map((anime, index) => (
+				{data.map((anime: any, index: any) => (
 					<div
 						className='embla__slide relative w-full flex-shrink-0'
 						key={index}
