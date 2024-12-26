@@ -8,8 +8,6 @@ AniLyfe is a simple and user-friendly anime streaming website that allows users 
 - [Installation](#installation)
 - [Technologies](#technologies)
 - [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Features
 
@@ -87,13 +85,3 @@ Contributions are welcome! To contribute to AniLyfe, follow these steps:
 
 5. **Open a pull request**
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-If you have any questions or feedback, feel free to reach out:
-
-- **Email:** sxcred06@gmail.com
-- **GitHub:** [quincyqqe](https://github.com/quincyqqe)
