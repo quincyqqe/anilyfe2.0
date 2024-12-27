@@ -16,3 +16,15 @@ export const getSeasonalAnime = async (year: number, season: string) => {
 	)
 	return response.data.data
 }
+
+export const getAnimeById = async (id: number) => {
+	const response = await axios.get(`${JIKAN_BASE_URL}/anime/${id}`)
+	return response.data.data
+}
+
+export const getAnimeByStatus = async (status: string) => {
+	const response = await axios.get(
+		`${JIKAN_BASE_URL}/top/anime?filter=${status}`
+	)
+	return response.data.data
+}
