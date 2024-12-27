@@ -6,6 +6,6 @@ export const useSeasonalAnime = (year: number, season: string) => {
 		queryKey: [year, season],
 		queryFn: () => getSeasonalAnime(year, season),
 		staleTime: 5 * 60 * 1000,
-        
+
 	})
 }
